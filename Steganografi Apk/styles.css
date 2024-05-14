@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ccc; /* Warna dan gaya garis pemisah */
+    margin: 20px 0; /* Atur margin atas dan bawah */
+}
+
+header {
+    background: #1f4692;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+input[type="file"],
+input[type="text"],
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4679cb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #14297a;
+}
+
+canvas {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img, .image-container canvas {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.output-container input[type="text"],
+.output-container p {
+    width: 100%; /* Atur lebar elemen input dan paragraf agar sesuai dengan lebar kotak */
+    box-sizing: border-box; /* Pastikan padding dan border dihitung dalam perhitungan lebar */
+    padding: 8px; /* Atur padding agar tampilan lebih rapi */
+    margin-bottom: 10px; /* Atur margin bawah agar tetap rapi */
+}
+
+.output-container p {
+    white-space: pre-wrap; /* Pastikan teks dapat wrap sesuai kebutuhan */
+}
+
+.profile-content {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Menyebarkan konten anggota secara merata */
+    flex-wrap: wrap; /* Memungkinkan konten berada dalam beberapa baris jika lebarnya melebihi lebar layar */
+}
+.profile-wrapper {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Mengatur jarak antara anggota menjadi seimbang */
+}
+.profile-member {
+    flex-basis: calc(40.30% - 23px); /* Lebar masing-masing anggota dengan spasi antara mereka */
+    margin-bottom: 20px; /* Spasi antara anggota */
+    padding: 0 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-section h2 {
+    text-align: center; /* Memposisikan teks di tengah */
+    margin-bottom: 50px; /* Menambahkan jarak di bawah teks */
+    font-size: 28px;
+}
+.steganography-section h2{
+    text-align: center; /* Memposisikan teks di tengah */
+    margin-bottom: 50px; /* Menambahkan jarak di bawah teks */
+    font-size: 27px;
+}

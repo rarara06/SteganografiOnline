@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Steganografi dengan Enkode dan Dekode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1><span class="highlight">Steganografi</span> Online</h1>
+</header>
+
+<div class="container">
+    <div class="landing-content">
+      
+        <!-- Profil Anggota -->
+        <div class="profile-section">
+            <h2>Profil Anggota</h2>
+        </div>
+        <div class="profile-wrapper">
+            <!-- Profil Anggota 1 -->
+            <div class="profile-member">
+                <img src="Khilfi MZ.jpg" alt="Foto Member" style="max-width: 200px; height: auto;" >
+
+                <h3>Khilfi Mochammad Zaky</h3>
+                <p>227006024</p>
+                <ul>
+                    <li>Email: 227006024@student.unsil.ac.id</li>
+                </ul>
+            </div>
+
+            <!-- Profil Anggota 2 -->
+            <div class="profile-member">
+                <img src="IMG_0001.JPG" alt="Profile Picture" style="max-width: 200px; height: auto;">
+                <h3>Lala Nurkomala</h3>
+                <p>227006002</p>
+                <ul>
+                    <li>Email: 227006002@student.unsil.ac.id</li>
+                </ul>
+            </div>
+
+            <!-- Profil Anggota 3 -->
+            <div class="profile-member">
+                <img src="IMG_0005.JPG" alt="Profile Picture" style="max-width: 200px; height: auto;">
+                <h3>Raditha Amelia</h3>
+                <p>227006019</p>
+                <ul>
+                    <li>Email: 227006019@student.unsil.ac.id</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        <!-- Konten Steganografi -->
+        <div class="steganography-section">
+            <h2>Steganografi</h2>
+        </div>
+        <div class="konten-steganografi">
+            <h2>Enkode Pesan ke dalam Gambar</h2>
+            <input type="file" id="imgInput" accept="image/*" onchange="previewImage()">
+            <input type="text" id="textInput" placeholder="Masukkan teks di sini...">
+            <button onclick="encode()">Enkode</button>
+            <h3>Gambar Asli</h3>
+            <div class="image-container" id="originalImageContainer">
+                <img id="originalImg" style="display:none;">
+            </div>
+            <h3>Gambar dengan Teks Terenkripsi</h3>
+            <div class="image-container" id="encodedImageContainer">
+                <canvas id="encodedCanvas" style="display:none; border:1px solid #000;"></canvas>
+            </div>
+            <h3>Kode Biner dari Teks Terenkripsi</h3>
+            <input type="text" id="binaryCodeInput" disabled>
+            <p id="binaryCode"></p>
+            <button id="downloadBtn" style="display:none;" onclick="download()">Unduh Gambar</button>
+
+            <h2>Dekode Pesan dari Gambar</h2>
+            <input type="file" id="imgDecodeInput" accept="image/*" onchange="decode()">
+            <h3>Teks Asli yang Terdekripsi</h3>
+            <input type="text" id="decodedTextInput" disabled>
+            <p id="decodedText"></p>
+            <h3>Teks Asli yang Diinputkan Saat Enkode</h3>
+            <input type="text" id="originalTextInputEncode" disabled>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
