@@ -124,7 +124,7 @@ p {
 
 .output-container input[type="text"],
 .output-container p {
-    width: 100%; /* Atur lebar elemen input dan paragraf agar sesuai dengan lebar kotak */
+    width: 100%; 
     box-sizing: border-box; /* Pastikan padding dan border dihitung dalam perhitungan lebar */
     padding: 8px; /* Atur padding agar tampilan lebih rapi */
     margin-bottom: 10px; /* Atur margin bawah agar tetap rapi */
